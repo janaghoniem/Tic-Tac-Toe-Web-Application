@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gametable {
+    border-collapse: collapse;
+}
+
+.gametable td {
+    width: 140px;
+    height: 140px;
+    text-align: center;
+}
+
+.gametable button {
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.gametable button:hover {
+    background-color: #3b3b3b;
+}
+
+.gametable tr:nth-child(2) td {
+    border-top: 9px solid aquamarine; 
+    border-bottom: 9px solid aquamarine;
+}
+
+.gametable td:nth-child(2) {
+    border-left: 9px solid aquamarine; 
+    border-right: 9px solid aquamarine; 
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#buttons button {
+    width: 700px;
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: aquamarine;
+    color: aquamarine;
+}
+
+#buttons button:hover {
+    border-color: darkmagenta;
+    color: darkmagenta;
+}
+
+#gametable {
+    display: none;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
